@@ -1,0 +1,60 @@
+/* Diseño Boutique - Glowly */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background-color: #fdfbf7; color: #5a5a5a; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; }
+
+a { color: #d88c9a; text-decoration: none; transition: 0.3s; }
+a:hover { color: #b66d7b; text-decoration: underline; }
+
+/* Navegación elegante */
+nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; padding: 25px; background-color: #ffffff; border-bottom: 1px solid #f0e6e6; box-shadow: 0 2px 10px rgba(0,0,0,0.02); }
+nav a { font-size: 15px; font-weight: 500; text-transform: uppercase; letter-spacing: 1.5px; padding: 5px 10px; color: #7a7a7a; }
+nav a:hover, nav a[aria-current] { color: #d88c9a; text-decoration: none; border-bottom: 2px solid #d88c9a; }
+
+h1, h2, h3 { color: #4a4a4a; margin-bottom: 15px; font-weight: 400; }
+h1 { font-size: 2.8rem; letter-spacing: 2px; }
+h2 { font-size: 2rem; border-bottom: 1px solid #f0e6e6; padding-bottom: 10px; display: inline-block; }
+
+/* Sección Hero (Principal) */
+.hero { text-align: center; padding: 80px 20px; background-color: #f9f6f0; }
+.hero-img { max-width: 600px; width: 100%; height: auto; border-radius: 15px; margin-top: 30px; box-shadow: 0 15px 30px rgba(216, 140, 154, 0.15); }
+
+.botones { margin-top: 35px; display: flex; justify-content: center; gap: 20px; }
+.boton { display: inline-block; background-color: #d88c9a; color: white; padding: 14px 35px; font-size: 15px; border-radius: 30px; text-transform: uppercase; letter-spacing: 1px; border: 1px solid #d88c9a; }
+.boton:hover { background-color: #b66d7b; color: white; text-decoration: none; border-color: #b66d7b; }
+.boton-secundario { background-color: transparent; color: #d88c9a; border: 1px solid #d88c9a; }
+
+/* Marquesina suave */
+.franja-glowly { background-color: #f4e8e9; color: #8c6b73; padding: 12px; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; }
+
+.seccion { max-width: 1100px; margin: auto; padding: 70px 20px; text-align: center; }
+
+/* Grid de Asesoría */
+.grid-servicios { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; margin-top: 50px; }
+.tarjeta { background-color: #ffffff; padding: 40px 30px; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.03); transition: transform 0.3s ease; border-top: 3px solid #d88c9a; }
+.tarjeta:hover { transform: translateY(-10px); }
+
+/* Listas y Tablas para rúbrica */
+ul.lista-glowly { list-style-type: circle; padding-left: 20px; text-align: left; color: #7a7a7a; }
+ul.lista-glowly li { margin-bottom: 8px; }
+
+footer { text-align: center; padding: 40px; background-color: #ffffff; border-top: 1px solid #f0e6e6; margin-top: 40px; font-size: 14px; color: #999; }
+/* Ajustes funcionales para catálogo y formularios */
+.contenido{max-width:1200px;margin:auto;padding:30px 20px}.scroll{overflow-x:auto}th,td{padding:12px;vertical-align:top}label{display:block}input,select,textarea,button{font:inherit}input:not([type=hidden]):not([type=checkbox]),select,textarea{max-width:100%;padding:8px;border:1px solid #b99ba4;border-radius:5px}button{background:#9e4e62;color:white;padding:9px 15px;border:0;border-radius:6px;cursor:pointer}.pedido input:not([type=hidden]){width:170px}.pedido{min-width:185px}.aviso{background:#f4e8e9;color:#593643;border-left:4px solid #9e4e62;padding:18px}.precio{white-space:nowrap}.sin-foto{font-size:14px}.filtro{margin-bottom:24px}a:focus-visible,button:focus-visible{outline:3px solid #593643;outline-offset:3px}@media(max-width:600px){.botones{flex-wrap:wrap}h1{font-size:2rem}.contenido{padding:20px 12px}}
+/* Estilos estéticos para la tabla del catálogo */
+.tabla-boutique { width: 100%; border-collapse: collapse; background: #ffffff; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.03); margin-top: 20px; }
+.tabla-boutique th { background: #d88c9a; color: white; padding: 18px; text-align: left; font-weight: normal; letter-spacing: 1px; }
+.tabla-boutique td { padding: 18px; border-bottom: 1px solid #f0e6e6; vertical-align: middle; color: #5a5a5a; }
+.tabla-boutique tr:last-child td { border-bottom: none; }
+.img-catalogo { border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: transform 0.3s; }
+.img-catalogo:hover { transform: scale(1.05); }
+
+/* Formulario limpio dentro de la tabla */
+.form-pedido { display: flex; flex-direction: column; max-width: 200px; margin: auto; }
+.form-pedido label { font-size: 13px; color: #7a7a7a; margin-bottom: 4px; text-align: left; }
+.form-pedido input { width: 100%; padding: 8px; margin-bottom: 12px; border: 1px solid #e0d0d3; border-radius: 5px; background: #fdfbf7; }
+.form-pedido .fila-cantidad { display: flex; gap: 10px; align-items: center; margin-bottom: 12px; }
+.form-pedido .fila-cantidad label { margin-bottom: 0; }
+.form-pedido .fila-cantidad input { margin-bottom: 0; width: 70px; text-align: center; }
+.form-pedido .btn-comprar { width: 100%; background: #d88c9a; color: white; border: none; padding: 10px; border-radius: 5px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+.form-pedido .btn-comprar:hover { background: #b66d7b; }
